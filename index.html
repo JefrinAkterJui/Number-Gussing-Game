@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Game</title>
+    <link rel="icon" href="img/dice.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-----------------------Player One------------------------->
+     <p class="error"></p>
+     <div class="main playerOne">
+         <h1 class="playerName">Player Number-1</h1>
+         <input  class="playerOneInput" type="number" onkeydown="OneEnter(event)" placeholder="Enter your number...">
+         <button  class="playerOneButton" onclick="POneClick()" >Go</button>
+     </div>
+     <!------------------------Player Two------------------------>
+     <div class="main playerTwo">
+        <p class="ChanceNumber"><span class="chanceCount"></span>/5</p>                                 
+         <h1 class="playerName">Palyer Number-2</h1>
+         <input  class="playerTwoInput" type="number" onkeydown="TowEnter(event)" placeholder="Enter your number...">
+         <button  class="playerTwoButton" onclick="PtowClick()">Go</button>
+     </div>
+     <!-------------------------Player Three--------------------->
+     <div class="main playerThree">
+        <p class="ChanceNumber"><span class="chanceCount2"></span>/5</p>                                 
+         <h1 class="playerName">Player Number-3</h1>
+         <input  class="playerThreeInput" type="number" onkeydown="ThreeEnter(event)" placeholder="Enter your number...">
+         <button  class="playerThreeButton" onclick="PthreeCilck()">Go</button>
+     </div>
+     <div class="winner">
+         <img src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-137.gif" alt="winner">
+         <h2 class="winner_result"></h2>
+     </div>
+
+     <script src="js/script.js"></script>
+</body>
+</html>
